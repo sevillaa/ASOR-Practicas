@@ -1,0 +1,58 @@
+- ln -s ej5 ej5_simbolico
+- ls
+    Archivo  ej10.txt  ej1.txt  ej2.txt  ej3.txt  ej4.txt  ej5  ej5.c  ej5_simbolico  ej6.txt  ej7  ej7.c  ej8.txt  ej9  ej9.c
+- ls -li
+    total 84
+    60162052 -rw-rw-r-- 1 miguel miguel     0 oct  2 10:25 Archivo
+    60162094 -rw-rw-r-- 1 miguel miguel     0 oct  2 10:38 ej10.txt
+    60162055 -rw-rw-r-- 1 miguel miguel   554 oct  2 10:25 ej1.txt
+    60162057 -rw-rw-r-- 1 miguel miguel  3152 oct  2 10:25 ej2.txt
+    60162058 -rw-rw-r-- 1 miguel miguel   737 oct  2 10:25 ej3.txt
+    60162059 -rw-rw-r-- 1 miguel miguel  1147 oct  2 10:25 ej4.txt
+    60162060 -rwxrwxr-x 1 miguel miguel 15992 oct  2 10:25 ej5
+    60162061 -rw-rw-r-- 1 miguel miguel   147 oct  2 10:25 ej5.c
+    60162103 lrwxrwxrwx 1 miguel miguel     3 oct  2 10:40 ej5_simbolico -> ej5
+    60162063 -rw-rw-r-- 1 miguel miguel  3329 oct  2 10:25 ej6.txt
+    60162064 -rwxrwxr-x 1 miguel miguel 16032 oct  2 10:25 ej7
+    60162065 -rw-rw-r-- 1 miguel miguel   192 oct  2 10:25 ej7.c
+    60162066 -rw-rw-r-- 1 miguel miguel  1398 oct  2 10:25 ej8.txt
+    60162067 -rwxrwxr-x 1 miguel miguel 16304 oct  2 10:34 ej9
+    60162068 -rw-rw-r-- 1 miguel miguel  1257 oct  2 10:34 ej9.c
+    miguel@miguel-MS-7E53:~/Proyectos/ASOR/practicas/P2/ejercicios/1-11_creacion_y_atributos_de_ficheros$ 
+
+EJ 5 TIENE INODO 601...060 Y EJ5_SIMBOLICO TIENE SU PROPIO INODO 601...103
+
+
+-----------------------------------------------------------------------------
+
+
+- ln ej5 ej5_duro
+- stat -c '%n: inodo=%i, enlaces=%h, tipo=%F' ej5 ej5_duro
+    ej5: inodo=60162060, enlaces=2, tipo=fichero regular
+    ej5_duro: inodo=60162060, enlaces=2, tipo=fichero regular
+- ls -li ej5 ej5_duro
+    60162060 -rwxrwxr-x 2 miguel miguel 15992 oct  2 10:25 ej5
+    60162060 -rwxrwxr-x 2 miguel miguel 15992 oct  2 10:25 ej5_duro 
+
+-----------------------------------------------------------------------------
+¿Qué sucede cuando se borra uno de los enlaces rígidos? ¿Qué sucede si se borra uno de los 
+enlaces simbólicos? ¿Y si se borra el fichero original? 
+
+Al borrar uno de los enlaces rígidos, disminuye en uno el número de enlaces, pero el fichero sigue 
+accesible mediante el otro nombre. Los datos se eliminan cuando se borra el último enlace rígido y
+ya no hay procesos que tengan el fichero abierto.
+
+Al borrar un enlace simbólico, se elimina únicamente el enlace; el fichero de destino no se ve afectado.
+
+Si se borra el fichero original, el enlace rígido sigue permitiendo acceder al contenido,
+porque ambos nombres apuntan al mismo inodo. En cambio, el enlace simbólico queda roto si
+apuntaba al nombre original.
+
+
+Prueba adicional con directorios (verificada en una carpeta temporal):
+  mkdir directorio
+  ln -s directorio directorio.sym
+  ls -ldi directorio directorio.sym
+El enlace simbólico tiene su propio inodo y apunta al directorio.
+  ln directorio directorio.hard
+Falla: no se permite crear un enlace duro a un directorio.

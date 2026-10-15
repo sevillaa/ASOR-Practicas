@@ -1,0 +1,13 @@
+En ej13.c ambos dup2() copian el mismo descriptor fd: invertirlos no cambia el destino.
+fflush(stdout) evita que la salida normal quede en el búfer y aparezca después del error.
+
+En la shell las redirecciones se aplican de izquierda a derecha:
+  ls > dirlist 2>&1   -> stdout va al fichero y stderr copia ese destino: ambos al fichero.
+  ls 2>&1 > dirlist   -> stderr copia el stdout original (terminal); solo stdout va al fichero.
+
+Prueba desde una carpeta temporal, con un nombre que no exista:
+  cat no-existe > dirlist 2>&1
+  cat dirlist
+  cat no-existe 2>&1 > dirlist
+  cat dirlist
+En la primera prueba el error queda guardado; en la segunda sale por terminal y el fichero queda vacío.

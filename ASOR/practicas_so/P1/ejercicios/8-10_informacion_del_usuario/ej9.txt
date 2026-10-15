@@ -1,0 +1,6 @@
+getuid() devuelve el UID real y geteuid() el efectivo, usado para comprobar permisos.
+Al ejecutar un programa con setuid activo, el UID efectivo puede pasar a ser el
+del propietario del ejecutable, mientras el real sigue siendo el del usuario.
+En esta prueba, ejecutarlo como otro usuario y ver UID real distinto del efectivo
+muestra el efecto de setuid. Si ambos coinciden, no podemos concluir que esté desactivado.
+Para comprobar el bit directamente: ls -l ./ej9 (aparece s o S en la ejecución del propietario).

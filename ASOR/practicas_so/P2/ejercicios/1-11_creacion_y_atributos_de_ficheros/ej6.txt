@@ -1,0 +1,55 @@
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ umask 027
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ touch ej6
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ mkdir ej6
+mkdir: ej6: El archivo existe
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ mkdir ej6D
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ ls -al
+total 48
+drwxr-xr-x 4 usuario_local users  4096 Oct  1 16:38 .
+drwxr-xr-x 3 usuario_local users  4096 Oct  1 16:20 ..
+drwxr-xr-x 2 usuario_local users  4096 Oct  1 16:20 1-11_creacion_y_atributos_de_ficheros
+-rw-r--r-x 1 usuario_local users     0 Oct  1 16:34 Archivo
+-rw-r--r-- 1 usuario_local users  3152 Oct  1 16:20 ej2.txt
+-rw-r--r-- 1 usuario_local users   737 Oct  1 16:20 ej3.txt
+-rw-r--r-- 1 usuario_local users  1147 Oct  1 16:20 ej4.txt
+-rwxr-xr-x 1 usuario_local users 15992 Oct  1 16:34 ej5
+-rw-r--r-- 1 usuario_local users   147 Oct  1 16:34 ej5.c
+-----w-rw- 1 usuario_local users     0 Oct  1 16:38 ej6
+drwxr-x--- 2 usuario_local users  4096 Oct  1 16:38 ej6D
+-rw-r--r-- 1 usuario_local users     0 Oct  1 16:20 fichero
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ rm ej6
+rm: ¿borrar el regular empty file 'ej6'  protegido contra escritura? (s/n) n
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ rm ej
+ej2.txt  ej3.txt  ej4.txt  ej5      ej5.c    ej6      ej6D/    
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ rm ej
+ej2.txt  ej3.txt  ej4.txt  ej5      ej5.c    ej6      ej6D/    
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ rm ej6
+rm: ¿borrar el regular empty file 'ej6'  protegido contra escritura? (s/n) s
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ ls -al
+total 48
+drwxr-xr-x 4 usuario_local users  4096 Oct  1 16:38 .
+drwxr-xr-x 3 usuario_local users  4096 Oct  1 16:20 ..
+drwxr-xr-x 2 usuario_local users  4096 Oct  1 16:20 1-11_creacion_y_atributos_de_ficheros
+-rw-r--r-x 1 usuario_local users     0 Oct  1 16:34 Archivo
+-rw-r--r-- 1 usuario_local users  3152 Oct  1 16:20 ej2.txt
+-rw-r--r-- 1 usuario_local users   737 Oct  1 16:20 ej3.txt
+-rw-r--r-- 1 usuario_local users  1147 Oct  1 16:20 ej4.txt
+-rwxr-xr-x 1 usuario_local users 15992 Oct  1 16:34 ej5
+-rw-r--r-- 1 usuario_local users   147 Oct  1 16:34 ej5.c
+drwxr-x--- 2 usuario_local users  4096 Oct  1 16:38 ej6D
+-rw-r--r-- 1 usuario_local users     0 Oct  1 16:20 fichero
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ touch ej6
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios$ ls -al
+total 48
+drwxr-xr-x 4 usuario_local users  4096 Oct  1 16:39 .
+drwxr-xr-x 3 usuario_local users  4096 Oct  1 16:20 ..
+drwxr-xr-x 2 usuario_local users  4096 Oct  1 16:20 1-11_creacion_y_atributos_de_ficheros
+-rw-r--r-x 1 usuario_local users     0 Oct  1 16:34 Archivo
+-rw-r--r-- 1 usuario_local users  3152 Oct  1 16:20 ej2.txt
+-rw-r--r-- 1 usuario_local users   737 Oct  1 16:20 ej3.txt
+-rw-r--r-- 1 usuario_local users  1147 Oct  1 16:20 ej4.txt
+-rwxr-xr-x 1 usuario_local users 15992 Oct  1 16:34 ej5
+-rw-r--r-- 1 usuario_local users   147 Oct  1 16:34 ej5.c
+-rw-r----- 1 usuario_local users     0 Oct  1 16:39 ej6
+drwxr-x--- 2 usuario_local users  4096 Oct  1 16:38 ej6D
+-rw-r--r-- 1 usuario_local users     0 Oct  1 16:20 fichero

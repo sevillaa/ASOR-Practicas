@@ -1,0 +1,14 @@
+Pruebas realizadas en el entorno de revisión; los valores dependen del usuario y la fecha.
+
+$ id
+uid=1000(miguel) gid=1000(miguel) groups=1000(miguel),65534(nogroup)
+
+$ id -u
+1000
+
+$ id -un
+miguel
+
+$ id -G
+1000 65534
+

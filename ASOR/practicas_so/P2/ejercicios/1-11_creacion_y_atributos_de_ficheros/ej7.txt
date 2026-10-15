@@ -1,0 +1,13 @@
+Prueba realizada con un fichero nuevo:
+  umask 0022
+  umask
+  ./ej7 fichero-nuevo
+  umask
+  stat -c "%a" fichero-nuevo
+
+Resultado:
+0022
+0022
+640
+
+La máscara de la shell sigue en 0022; solo el hijo la cambia a 0027.

@@ -1,0 +1,10 @@
+Terminal 1: ./ej15 /tmp/asor-cerrojo
+Terminal 2, antes de 10 segundos:
+  echo prueba >> /tmp/asor-cerrojo
+  ./ej15 /tmp/asor-cerrojo
+
+echo puede escribir: el cerrojo es consultivo y echo no lo comprueba.
+La segunda ejecución falla con perror porque F_TLOCK no espera si otro proceso bloqueó el fichero.
+A los 10 segundos se libera el cerrojo; durante los 10 siguientes el primer proceso
+sigue vivo, pero otra ejecución ya puede bloquear el fichero.
+El argumento 0 de lockf bloquea desde la posición actual (aquí 0) hasta EOF, incluido el crecimiento.

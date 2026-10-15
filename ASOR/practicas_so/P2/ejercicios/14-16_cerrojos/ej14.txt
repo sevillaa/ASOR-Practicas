@@ -1,0 +1,8 @@
+Consultar: cat /proc/locks
+Puede estar vacío si no hay cerrojos visibles en ese momento.
+Para observar uno, ejecutar ej15 con un fichero y consultar /proc/locks antes de 10 segundos.
+
+Cada fila muestra: identificador, tipo (POSIX/FLOCK/OFDLCK), ADVISORY,
+READ o WRITE, PID, dispositivo:inodo y rango de bytes (inicio y final, o EOF).
+lockf() genera un cerrojo POSIX consultivo: otros procesos pueden ignorarlo.
+El PID y el inodo permiten relacionar el cerrojo con el proceso y su fichero.

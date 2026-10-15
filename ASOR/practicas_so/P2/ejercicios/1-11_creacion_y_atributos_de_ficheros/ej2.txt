@@ -1,0 +1,76 @@
+ramon@ramon:[~]
+$ ls -ls */
+anaconda3/:
+total 36960
+   20 drwxrwxr-x   5 ramon ramon    20480 abr 24 17:03 bin
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 cmake
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 compiler_compat
+36588 -rwxrwxr-x   1 ramon ramon 37465192 abr 24 17:03 _conda
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 condabin
+   44 drwxrwxr-x   3 ramon ramon    40960 abr 24 17:03 conda-meta
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 condarc.d
+    4 drwxrwxr-x   4 ramon ramon     4096 abr 24 17:03 doc
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 19:35 envs
+    4 drwxrwxr-x  10 ramon ramon     4096 abr 24 17:05 etc
+   20 drwxrwxr-x 105 ramon ramon    20480 abr 24 17:03 include
+  100 drwxrwxr-x  34 ramon ramon    98304 abr 24 17:03 lib
+    4 drwxrwxr-x   5 ramon ramon     4096 abr 24 17:03 libexec
+    4 -rw-r--r--   1 ramon ramon      121 ene 13  2026 LICENSE.txt
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 man
+    4 drwxrwxr-x  76 ramon ramon     4096 abr 24 17:03 mkspecs
+    4 drwxrwxr-x   4 ramon ramon     4096 abr 24 17:03 mod
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 opt
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 phrasebooks
+   80 drwxrwxr-x 645 ramon ramon    77824 abr 24 19:35 pkgs
+    4 drwxrwxr-x  29 ramon ramon     4096 abr 24 17:03 plugins
+    4 drwxrwxr-x  26 ramon ramon     4096 abr 24 17:03 qml
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 resources
+    4 drwxrwxr-x   2 ramon ramon     4096 abr 24 17:03 sbin
+    4 drwxrwxr-x  48 ramon ramon     4096 abr 24 17:03 share
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 shell
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 ssl
+   12 drwxrwxr-x   3 ramon ramon    12288 abr 24 17:03 translations
+    4 -rwxr-xr-x   1 ramon ramon      410 ene 13  2026 uninstall.sh
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 var
+    4 drwxrwxr-x   3 ramon ramon     4096 abr 24 17:03 x86_64-conda-linux-gnu
+
+Backups/:
+total 4
+4 drwxr-xr-x 3 root root 4096 jun  7  2025 1749332847755
+ls: no se puede abrir el directorio 'blob_storage/': Permiso denegado
+ls: no se puede abrir el directorio 'Cache/': Permiso denegado
+
+CachedData/:
+total 4
+4 drwxr-xr-x 3 root root 4096 jun  7  2025 848b80aeb52026648a8ff9f7c45a9b0a80641e2e
+
+CachedProfilesData/:
+total 4
+4 drwxr-xr-x 2 root root 4096 jun  7  2025 __default__profile__
+ls: no se puede abrir el directorio 'Code Cache/': Permiso denegado
+
+'Copias de Seguridad/':
+total 36
+12 -rwxr-xr-x 1 root root 8765 jun  2  2025 09_custom
+12 -rw------- 1 root root 9292 sep 24  2024 grub.cfg
+12 -rw------- 1 root root 9672 jun  2  2025 grub_Copia.cfg
+ls: no se puede abrir el directorio 'Crashpad/': Permiso denegado
+ls: no se puede abrir el directorio 'DawnGraphiteCache/': Permiso denegado
+ls: no se puede abrir el directorio 'DawnWebGPUCache/': Permiso denegado
+
+.
+.
+.
+
+User/:
+total 16
+4 drwxr-xr-x 2 root root 4096 jun 10  2025 globalStorage
+4 drwxr-xr-x 3 root root 4096 jun  7  2025 History
+4 drwxr-xr-x 2 root root 4096 jun  7  2025 snippets
+4 drwxr-xr-x 3 root root 4096 jun  7  2025 workspaceStorage
+
+Vídeos/:
+total 0
+
+Para consultar los permisos del propio directorio, sin listar su contenido:
+  ls -ld . /tmp

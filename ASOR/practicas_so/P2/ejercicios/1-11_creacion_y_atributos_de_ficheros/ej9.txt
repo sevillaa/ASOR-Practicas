@@ -1,0 +1,5 @@
+lstat() consulta el propio enlace simbólico; stat() sigue el enlace hasta su destino.
+st_atime: último acceso a los datos del fichero.
+st_mtime: última modificación de su contenido.
+st_ctime: último cambio del estado del inodo, por ejemplo permisos, propietario
+o contenido. No es la fecha de creación.

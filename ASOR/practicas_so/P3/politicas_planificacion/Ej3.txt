@@ -1,0 +1,8 @@
+root@ubuntu-jammy:/home/ubuntu/Documents# chrt -f -p 12 1513 
+root@ubuntu-jammy:/home/ubuntu/Documents# ./ej2 
+Política de planificación: SCHED_FIFO
+Prioridad actual (sched_getparam): 12
+Prioridad mínima para la política: 1
+Prioridad máxima para la política: 99
+Valor nice actual (getpriority): -10
+root@ubuntu-jammy:/home/ubuntu/Documents# 

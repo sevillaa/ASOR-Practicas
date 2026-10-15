@@ -1,0 +1,10 @@
+-a -> entradas de directorio que comienzan por "." 
+-l -> lista archivo en el formato largo: modo fichero, numero enlaces, nombre dueño, nombre grupo, 
+        numero de bytes, mes abreviado, dia del mes que fue modificado, ultima hora modificacion, minutos ultima mod, y el ruta archivo
+-d -> directorios son listados como archivos
+-h -> usado con -l da unidades (Byte, Kilobyte, Megabyte, Gigabyte, Terabyte)
+-i -> imprime el numero de i nodo
+-R -> lista directorios recursivamente 
+-1 -> fuerza que la salida sea una linea por entrada
+-F -> añade un indicador: / a directorios, * a ejecutables, @ a enlaces, | a FIFO y = a sockets.
+--color=auto -> distingue los tipos de fichero por colores cuando la salida es una terminal.

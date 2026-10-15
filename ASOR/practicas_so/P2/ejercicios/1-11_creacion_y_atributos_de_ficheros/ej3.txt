@@ -1,0 +1,18 @@
+ramon@ramon:[~/Documentos/UCM/4to Año/ASOR/practicas/P2/ejercicios]
+$ chmod 645 fichero 
+ramon@ramon:[~/Documentos/UCM/4to Año/ASOR/practicas/P2/ejercicios]
+$ ls -l
+total 8
+-rw-rw-r-- 1 ramon ramon  554 sep 23 18:25 ej1.txt
+-rw-rw-r-- 1 ramon ramon 3152 sep 23 18:37 ej2.txt
+-rw-r--r-x 1 ramon ramon    0 sep 23 18:40 fichero
+ramon@ramon:[~/Documentos/UCM/4to Año/ASOR/practicas/P2/ejercicios]
+$ chmod u=rw,g=r,o=rx fichero
+ramon@ramon:[~/Documentos/UCM/4to Año/ASOR/practicas/P2/ejercicios]
+$ ls -l
+total 8
+-rw-rw-r-- 1 ramon ramon  554 sep 23 18:25 ej1.txt
+-rw-rw-r-- 1 ramon ramon 3152 sep 23 18:37 ej2.txt
+-rw-r--r-x 1 ramon ramon    0 sep 23 18:40 fichero
+ramon@ramon:[~/Documentos/UCM/4to Año/ASOR/practicas/P2/ejercicios]
+$ 

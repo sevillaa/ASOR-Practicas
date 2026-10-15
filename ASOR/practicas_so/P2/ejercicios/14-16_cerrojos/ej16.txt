@@ -1,0 +1,7 @@
+Opcional: consultar man flock.
+Terminal 1: flock /tmp/asor-flock -c 'echo bloqueado; sleep 10'
+Terminal 2: flock -n /tmp/asor-flock -c 'echo adquirido'
+Si el primero mantiene el cerrojo, el segundo termina con código 1 sin ejecutar echo.
+Comprobarlo con echo $? inmediatamente después.
+Sin -n, el segundo espera. Al terminar el comando se libera el cerrojo.
+En ficheros locales Linux, flock y los cerrojos POSIX de lockf son mecanismos independientes.

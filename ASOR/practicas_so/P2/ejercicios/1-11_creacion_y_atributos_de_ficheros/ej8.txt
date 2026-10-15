@@ -1,0 +1,27 @@
+usuario_local@pto1101:~/Documents/ASOR/practicas/P2/ejercicios/1-11_creacion_y_atributos_de_ficheros$ ls -ial
+total 72
+6849932 drwxr-xr-x 3 usuario_local users  4096 Oct  1 17:21 .
+6849931 drwxr-xr-x 3 usuario_local users  4096 Oct  1 17:21 ..
+6833533 -rw-r--r-x 1 usuario_local users     0 Oct  1 16:34 Archivo
+6849871 -rw-r--r-x 1 usuario_local users     0 Oct  1 17:13 Archivo7
+6849933 -rw-r--r-- 1 usuario_local users   554 Oct  1 16:20 ej1.txt
+6849934 -rw-r--r-- 1 usuario_local users     0 Oct  1 16:20 ej2.c
+6849935 -rw-r--r-- 1 usuario_local users  3152 Oct  1 16:20 ej2.txt
+6849936 -rw-r--r-- 1 usuario_local users   737 Oct  1 16:20 ej3.txt
+6849937 -rw-r--r-- 1 usuario_local users  1147 Oct  1 16:20 ej4.txt
+6833476 -rwxr-xr-x 1 usuario_local users 15992 Oct  1 16:34 ej5
+6849938 -rw-r--r-- 1 usuario_local users   147 Oct  1 16:34 ej5.c
+6850889 -rw-r----- 1 usuario_local users     0 Oct  1 16:39 ej6
+6850893 -rw-r--r-- 1 usuario_local users  3329 Oct  1 16:39 ej6.txt
+7081368 drwxr-x--- 2 usuario_local users  4096 Oct  1 16:38 ej6D
+6830863 -rwxrwxrwx 1 usuario_local users 16032 Oct  1 17:13 ej7
+6849876 -rw-r----- 1 usuario_local users   192 Oct  1 17:12 ej7.c
+6849939 -rw-r--r-- 1 usuario_local users     0 Oct  1 16:20 fichero
+6850918 -rw-r----- 1 usuario_local users     0 Oct  1 16:52 fichero_ejemplo
+6850919 -rw-r----- 1 usuario_local users     0 Oct  1 16:52 fichero_ejemplo2
+
+
+Consultar el inodo y el resto de atributos:
+  ls -i Archivo
+  stat Archivo
+  stat -c "%n: inodo=%i, enlaces=%h, permisos=%A, tamaño=%s" Archivo

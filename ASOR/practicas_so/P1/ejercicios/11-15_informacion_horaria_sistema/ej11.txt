@@ -1,0 +1,14 @@
+Pruebas realizadas en el entorno de revisión; los valores dependen del usuario y la fecha.
+
+$ date
+Thu Oct 15 12:08:06 CEST 2026
+
+$ date +%F %T
+2026-10-15 12:08:06
+
+$ date +%s
+1792058886
+
+$ date -u
+Thu Oct 15 10:08:06 UTC 2026
+
